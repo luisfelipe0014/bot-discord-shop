@@ -17,9 +17,9 @@ module.exports = async (message) => {
     snipes.splice(10);
     message.client.snipes.set(message.channel.id, snipes);
     let embed = new MessageEmbed()
-      .setTitle(`New message deleted!`)
+      .setTitle(`Nova Mensagem Deletada!`)
       .setDescription(
-        `**The user ${message.author.tag} has deleted a message in <#${message.channel.id}>**`
+        `**Usuario ${message.author.tag} Canal <#${message.channel.id}>**`
       )
       .addField(`Content`, message.content, true)
       .setColor(`RED`);

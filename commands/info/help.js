@@ -11,7 +11,7 @@ module.exports = {
       const ajuda = new Discord.MessageEmbed()
       .setColor(color)
       .setTitle(title + "Help")
-      .setDescription("Reage de acordo com o que procuras!\n\n📚 - Informações\n\n🎵 - Música\n\n⚔️ - Administrativos\n\n🎊 - Diversão")  
+      .setDescription("Reage de acordo com o que procura!\n\n📚 - Informações\n\n🎵 - Música\n\n⚔️ - Administrativos\n\n🎊 - Diversão")  
       .setFooter(footertext, footerimage)
     
       message.channel.send(ajuda).then(msg => {

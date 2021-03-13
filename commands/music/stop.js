@@ -12,14 +12,14 @@ module.exports = {
     const { channel } = message.member.voice;
 
     if (!channel) {
-      embed.setAuthor("Precisas de estar num canal de voz.")
+      embed.setAuthor("Precisa estar num canal de voz.")
       return message.channel.send(embed);
     }
 
     const serverQueue = message.client.queue.get(message.guild.id);
 
     if (!serverQueue) {
-      embed.setAuthor("Não esta nada a tocar que eu pudesse parar")
+      embed.setAuthor("Não esta tocando musica que eu pudesse parar")
       return message.channel.send(embed);
     }
 

@@ -23,7 +23,7 @@ module.exports = {
     cargos = message.guild.roles.cache.map(r => r).join(" ").replace("@everyone", "")
 
     if (cargos.length > 1024) {
-        Embed.addField(`Cargos (${message.guild.roles.cache.size - 1})`, 'Demasiados cargos para exibir!')
+        Embed.addField(`Cargos (${message.guild.roles.cache.size - 1})`, 'Demas cargos para exibir!')
     } else {
         Embed.addField(`Cargos (${message.guild.roles.cache.size - 1})`, cargos)
     }

@@ -8,7 +8,7 @@ module.exports = {
     let embed = new MessageEmbed().setColor(color);
     const { channel } = message.member.voice;
     if (!channel) {
-      embed.setAuthor("Precisas de estar num canal de voz.");
+      embed.setAuthor("Precisa de estar num canal de voz.");
       return message.channe.send(embed);
     }
 

@@ -12,7 +12,7 @@ module.exports = {
 
 
     if (!channel) {
-      embed.setAuthor("Precisas de estar num canal de voz.")
+      embed.setAuthor("Precisa estar num canal de voz.")
       return message.channel.send(embed);
     }
     const serverQueue = message.client.queue.get(message.guild.id);
@@ -46,7 +46,7 @@ module.exports = {
 
       vote.vote++
       vote.voters.push(message.author.id)
-      return message.channel.send(`You Voted for the Song to Skip, btw we currently need ${Math.floor(vcvote - vote.vote)} votes`)
+      return message.channel.send(`Você votou na música para pular, a propósito, atualmente precisamos ${Math.floor(vcvote - vote.vote)} votos`)
     }
 
     serverQueue.connection.dispatcher.end();

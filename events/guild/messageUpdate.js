@@ -2,13 +2,13 @@ const { MessageEmbed } = require("discord.js");
 module.exports = async (oldMessage, newMessage) => {
   try {
     let embed = new MessageEmbed()
-      .setTitle(`New message edited`)
+      .setTitle(`Nova Mensagem Editada`)
       .setColor(`GREEN`)
       .setDescription(
-        `**The user ${oldMessage.author.tag} has edited a message in <#${oldMessage.channel.id}>**`
+        `**Usuario ${oldMessage.author.tag} Canal <#${oldMessage.channel.id}>**`
       )
-      .addField(`Old Content`, oldMessage.content, true)
-      .addField(`New Content`, newMessage.content, true);
+      .addField(`Antes`, oldMessage.content, true)
+      .addField(`Depois`, newMessage.content, true);
     let channel = oldMessage.guild.channels.cache.find(
       (ch) => ch.name === "bot-log"
     );

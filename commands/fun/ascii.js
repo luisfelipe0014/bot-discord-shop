@@ -12,7 +12,7 @@ module.exports = {
 
     if (!text) {
       let Embed = new Discord.MessageEmbed()
-        .setDescription("Tens de fornecer texto!")
+        .setDescription("Tem que Escrever um texto!")
         .setFooter(footertext, footerimage)
         .setAuthor(`${title}Ascii`, null, null)
         .setColor(color);
@@ -21,7 +21,7 @@ module.exports = {
       figlet.text(text, function (err, ascii) {
         if (ascii.length > 2000) {
           let Embed = new Discord.MessageEmbed()
-            .setDescription('O texto que introduziste fica demasiado grande em ascii!')
+            .setDescription('O texto que escreveu fica demasiado grande em ascii!')
             .setFooter(footertext, footerimage)
             .setAuthor(`${title}Ascii`, null, null)
             .setColor(color);

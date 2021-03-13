@@ -10,7 +10,7 @@ module.exports = {
     if (!question) {
       let Embed = new MessageEmbed()
         .setTitle('Mythic  ◆  8Ball')
-        .setDescription('Tens de fornecer uma pergunta!')
+        .setDescription('Tem que fazer uma pergunta!')
         .setColor(color)
         .setFooter(footertext, footerimage)
       return message.channel.send(Embed)

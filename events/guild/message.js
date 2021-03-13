@@ -29,8 +29,8 @@ module.exports = async (bot, message) => {
       if (Timeout.has(`${message.author.id}${command.name}`)) {
         let Embed = new MessageEmbed()
           .setFooter(footertext, footerimage)
-          .setDescription(`Tens de esperar ${ms(command.timeout)} entre cada utilização do comando ${command.name}`)
-          .setAuthor("RVG  ≫  Cooldown", null, null)
+          .setDescription(`Tem que esperar ${ms(command.timeout)} entre cada utilização do comando ${command.name}`)
+          .setAuthor("Felipe  ≫  Cooldown", null, null)
           .setColor(color);
         message.channel.send(Embed)
       } else {

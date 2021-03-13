@@ -27,9 +27,9 @@ module.exports = {
           });
           newWarns.save();
           message.channel.send(
-            `${user.tag} has been warned with the reason of ${args
+            `${user.tag} foi avisado com o motivo de ${args
               .slice(1)
-              .join(" ")}. They now have 1 warn.`
+              .join(" ")}. Eles agora têm 1 warn.`
           );
         } else {
           data.Warns.unshift({
@@ -38,9 +38,9 @@ module.exports = {
           });
           data.save();
           message.channel.send(
-            `${user.tag} has been warned with the reason of ${args
+            `${user.tag} foi avisado com o motivo de ${args
               .slice(1)
-              .join(" ")}. They know have ${data.Warns.length} warns.`
+              .join(" ")}. Eles sabem que tem ${data.Warns.length} warns.`
           );
         }
       }

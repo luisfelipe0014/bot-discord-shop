@@ -15,14 +15,14 @@ module.exports = {
 
     const { channel } = message.member.voice;
     if (!channel) {
-      embed.setAuthor("Precisas de estar num canal de voz.")
+      embed.setAuthor("Precisa estar num canal de voz.")
       return message.channel.send(embed);
     }
 
     const serverQueue = message.client.queue.get(message.guild.id);
 
     if (!serverQueue) {
-      embed.setAuthor("O Bot não está a reproduzir nada")
+      embed.setAuthor("Não estou reproduzindo nada")
       return message.channel.send(embed);
     }
 
@@ -37,7 +37,7 @@ module.exports = {
     }
 
     if (args[0] > 200) {
-      embed.setAuthor("Vais rebentar com os ouvidos se atingires o limite de 200 💀")
+      embed.setAuthor("Vai regaça os meus ouvidos se atingir o limite de 200 💀")
       return message.channel.send(embed)
     }
 

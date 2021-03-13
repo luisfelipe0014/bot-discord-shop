@@ -11,7 +11,7 @@ module.exports = {
       subreddits[Math.floor(Math.random() * subreddits.length)];
     let img = await api(subreddit, true);
     const Embed = new MessageEmbed()
-      .setTitle(`A meme from r/${subreddit}`)
+      .setTitle(`Um meme de r/${subreddit}`)
       .setURL(`https://reddit.com/r/${subreddit}`)
       .setColor("RANDOM")
       .setImage(img);

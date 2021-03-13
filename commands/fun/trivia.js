@@ -1,12 +1,12 @@
 const { MessageEmbed } = require("discord.js");
 let questions = [
   {
-    title: "Best programming language",
+    title: "Melhor linguagem de programação",
     options: ["JavaScript/TypeScript", "Python", "Ruby", "Rust"],
     correct: 1,
   },
   {
-    title: "Best NPM package",
+    title: "Melhor NPM package",
     options: ["int.engine", "ms", "ws", "discord.js"],
     correct: 3,
   },
@@ -28,7 +28,7 @@ module.exports = {
       )
       .setColor(`GREEN`)
       .setFooter(
-        `Reply to this message with the correct question number! You have 15 seconds.`
+        `Responda a esta mensagem com o número correto da pergunta! Você tem 15 segundos.`
       );
     message.channel.send(Embed);
     try {
@@ -37,12 +37,12 @@ module.exports = {
         { time: 15000, max: 1, errors: ["time"] }
       );
       if (parseInt(msgs.first().content) == q.correct) {
-        return message.channel.send(`You got it correct!`);
+        return message.channel.send(`Você acertou!`);
       } else {
-        return message.channel.send(`You got it incorrect.`);
+        return message.channel.send(`Você entendeu errado.`);
       }
     } catch (e) {
-      return message.channel.send(`You did not answer!`);
+      return message.channel.send(`Você não respondeu!`);
     }
   },
 };

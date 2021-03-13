@@ -10,7 +10,7 @@ module.exports = {
   run: async (bot, message, args) => {
     if (args.length < 1) {
       let Embed = new Discord.MessageEmbed()
-        .setDescription('Tens de fornecer uma cidade!')
+        .setDescription('Tem que fornecer uma cidade!')
         .setFooter(footertext, footerimage)
         .setAuthor(`${title}Weather`, null, null)
         .setColor(color);
@@ -19,7 +19,7 @@ module.exports = {
       weather.find({search: args.join(" "), degreeType: 'C'}, function (error, result){
         if(result === undefined || result.length === 0) {
           let Embed = new Discord.MessageEmbed()
-            .setDescription('Tens de fornecer uma cidade real!')
+            .setDescription('Tem que fornecer uma cidade real!')
             .setFooter(footertext, footerimage)
             .setAuthor(`${title}Weather`, null, null)
             .setColor(color);

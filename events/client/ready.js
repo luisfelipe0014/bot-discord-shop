@@ -20,7 +20,7 @@ module.exports = async(bot) => {
 
     setInterval(async () => { // controlar o intervalo
       let i = Math.floor(Math.random() * atividades.length + 1) - 1
-        await bot.user.setActivity(atividades[i][0], { type: atividades [i][1], url: "https://www.twitch.tv/lender0"});
+        await bot.user.setActivity(atividades[i][0], { type: atividades [i][1], url: "https://www.twitch.tv/luisf3l1p3_"});
     }, 7000); // intervalo
   
     setInterval(async () => {

@@ -11,7 +11,7 @@ module.exports = {
     const { channel } = message.member.voice;
 
     if (!channel) {
-      embed.setAuthor("Precisas de estar num canal de voz.")
+      embed.setAuthor("Precisa estar num canal de voz.")
       return message.channel.send(embed);
     }
 

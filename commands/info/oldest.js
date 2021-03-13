@@ -16,7 +16,7 @@ module.exports = {
       .setColor(color)
       .setFooter(footertext, footerimage)
       .setDescription(
-        `**${mem.user.username}** é o utilizador mais velho da **${message.guild.name}**!\n
+        `**${mem.user.username}** é o membro mais velho da **${message.guild.name}**!\n
         Data de criação da conta: \`${formatDate(mem.user.createdAt)}\``
       );
     message.channel.send(Embed);

@@ -3,22 +3,22 @@ const { title, color, footertext, footerimage } = require('../../config.json');
 
 module.exports = {
   name: "announce",
-  description: "Get the bot to say what ever you want in a specific channel.",
+  description: "Faça o bot dizer o que você quiser em um canal específico.",
   usage: "<channel id> <msg>",
   run: async (bot, message, args) => {
     let rChannel = message.guild.channels.cache.get(args[0]);
     if (!rChannel)
       return message.channel.send(
-        `You did not specify your channel to send the announcement too!`
+        `Você não especificou seu canal para enviar o anúncio também!`
       );
     console.log(rChannel);
     let MSG = message.content
       .split(`${bot.prefix}announce ${rChannel.id} `)
       .join("");
     if (!MSG)
-      return message.channel.send(`You did not specify your message to send!`);
+      return message.channel.send(`Você não especificou sua mensagem para enviar!`);
     const _ = new MessageEmbed()
-      .setTitle(`New announcement!`)
+      .setTitle(`Novo Anuncio!`)
       .setDescription(`${MSG}`)
       .setColor("RANDOM");
     rChannel.send(_);

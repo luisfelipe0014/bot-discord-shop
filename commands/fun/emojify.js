@@ -11,7 +11,7 @@ module.exports = {
     let user = message.mentions.users.first();
     if (!message.content.substr(9).trim().length) {
       let Embed = new Discord.MessageEmbed()
-          .setDescription("Tens de fornecer texto!")
+          .setDescription("Tem que fornecer texto!")
           .setFooter(footertext, footerimage)
           .setAuthor("Mythic  ◆  Emojify", null, null)
           .setColor(color);

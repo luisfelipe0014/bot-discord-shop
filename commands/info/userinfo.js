@@ -13,7 +13,7 @@ module.exports = {
 
     if (!user) {
       let Embed = new Discord.MessageEmbed()
-        .setDescription('Tens de mencionar uma pessoa para poder mostrar os seus dados!')
+        .setDescription('Tem que mencionar uma pessoa para poder mostrar os seus dados!')
         .setFooter(footertext, footerimage)
         .setAuthor("Mythic  ◆  Userinfo", null, null)
         .setColor(color);

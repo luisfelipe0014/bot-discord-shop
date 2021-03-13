@@ -32,8 +32,8 @@ module.exports = {
 			])
 			.addField('Developer', [
 				'**Discord** > <@391706038698508299>',
-				`**Steam** > [(Clica aqui)](http://steamcommunity.com/profiles/76561198985255524)`,
-				`**Site** > [(Clica aqui)](http://micodesignservice.com)`,
+				`**Steam** > [(Clica aqui)](https://steamcommunity.com/id/luisfelipe0014/)`,
+				`**Site** > [(Clica aqui)](https://discord.gg/xDXzY25NcJ)`,
 			])
 			.setFooter(footertext, footerimage);
 		message.channel.send(Embed);

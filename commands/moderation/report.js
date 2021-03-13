@@ -10,12 +10,12 @@ module.exports = {
     let User = message.mentions.users.first() || null;
 
     if (User == null) {
-      return message.channel.send(`You did not mention a user!`);
+      return message.channel.send(`Você não mencionou um usuário!`);
     } else {
       let Reason = message.content.slice(bot.prefix.length + 22 + 7) || null;
       if (Reason == null) {
         return message.channel.send(
-          `You did not specify a reason for the report!`
+          `Você não especificou um motivo para o report!`
         );
       }
       let Avatar = User.displayAvatarURL();
@@ -24,12 +24,12 @@ module.exports = {
       );
       if (!Channel)
         return message.channel.send(
-          `There is no channel in this guild which is called \`reports\``
+          `Não há nenhum canal nesta guilda que é chamado \`reports\``
         );
       let Embed = new MessageEmbed()
-        .setTitle(`New report!`)
+        .setTitle(`Novo Report!`)
         .setDescription(
-          `The moderator \`${message.author.tag}\` has reported the user \`${User.tag}\`! `
+          `O moderador \`${message.author.tag}\` relatou o usuário \`${User.tag}\`! `
         )
         .setColor(`RED`)
         .setThumbnail(Avatar)

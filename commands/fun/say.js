@@ -6,7 +6,7 @@ module.exports = {
     if (!message.member.permissions.has("ADMINISTRATOR")) return;
     let MSG = message.content.split(`${bot.prefix}say `).join("");
     if (!MSG)
-      return message.channel.send(`You did not specify your message to send!`);
+      return message.channel.send(`Você não especificou sua mensagem para enviar!`);
     message.channel.send(MSG);
     message.delete();
   },

@@ -9,7 +9,7 @@ module.exports = {
     if (!args) {
       let Embed = new MessageEmbed()
         .setTitle('Mythic  ◆  Escolher')
-        .setDescription('Tens de fornecer opções!')
+        .setDescription('tem que fornecer opções!')
         .setColor(color)
         .setFooter(footertext, footerimage)
       message.channel.send(Embed)

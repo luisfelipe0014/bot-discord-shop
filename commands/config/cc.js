@@ -7,11 +7,11 @@ module.exports = {
   aliases: ["custom"],
   run: async (bot, message, args) => {
     if (!message.member.permissions.has("MANAGE_MESSAGES"))
-      return message.channel.send(`You do not have enough permissions!`);
+      return message.channel.send(`Você não tem permissões suficientes!`);
     if (!args[0])
-      return message.channel.send(`You did not specify a custom command name!`);
+      return message.channel.send(`Você não especificou o nome de comando!`);
     if (!args.slice(1).join(" "))
-      return message.channel.send(`No content specified!`);
+      return message.channel.send(`Nenhum conteúdo especificado!`);
     custom.findOne(
       { Guild: message.guild.id, Command: args[0] },
       async (err, data) => {
@@ -21,7 +21,7 @@ module.exports = {
           data.save();
 
           message.channel.send(
-            `Successfully updated the command \`${args[0]}\``
+            `Comando atualizado com sucesso \`${args[0]}\``
           );
         } else if (!data) {
           let newData = new custom({
@@ -31,7 +31,7 @@ module.exports = {
           });
           newData.save();
           message.channel.send(
-            `Successfully created the command \`${args[0]}\``
+            `Comando criado com sucesso \`${args[0]}\``
           );
         }
       }

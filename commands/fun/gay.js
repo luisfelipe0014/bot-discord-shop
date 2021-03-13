@@ -12,7 +12,7 @@ module.exports = {
 
     if (!user) {
       let Embed = new Discord.MessageEmbed()
-        .setDescription('Tens de mencionar uma pessoa para poderes saber se ela é gay ou não!')
+        .setDescription('Tem que mencionar uma pessoa para poderes saber se ela é gay ou não!')
         .setFooter(footertext, footerimage)
         .setAuthor(title + 'gay', null, null)
         .setColor(color);

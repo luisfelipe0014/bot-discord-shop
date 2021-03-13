@@ -12,7 +12,7 @@ module.exports = {
 
     if (!user) {
       let Embed = new Discord.MessageEmbed()
-        .setDescription('Tens de mencionar uma pessoa para poderes saber o tamanho do seu pénis!')
+        .setDescription('Tem que mencionar uma pessoa para poderes saber o tamanho do seu pénis!')
         .setFooter(footertext, footerimage)
         .setAuthor(title + 'Pénis', null, null)
         .setColor(color);
