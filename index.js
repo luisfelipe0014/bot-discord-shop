@@ -14,7 +14,7 @@ bot.aliases = new Discord.Collection();
 bot.snipes = new Discord.Collection();
 bot.events = new Discord.Collection();
 bot.categories = fs.readdirSync("./commands/");
-const token = require(`./token.json`);
+const token = require(`./.env`);
 
 ["command", "server"].forEach((handler) => {
   require(`./handlers/${handler}`)(bot, prefix);
@@ -44,4 +44,4 @@ bot.on("messageReactionRemove", (reaction, user) => {
   require("./events/guild/messageReactionRemove")(reaction, user);
 });
 
-bot.login(token.Token);
+bot.login(token.TOKEN_BOT);
