@@ -1,1 +1,1 @@
-web: node index.js 
+qrshopbotRun: node index.js
