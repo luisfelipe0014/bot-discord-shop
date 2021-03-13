@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "bot criado para lojinha de fivem",
   "main": "index.js",
-  "start": "node index",
   "dependencies": {
     "@discordjs/opus": "^0.4.0",
     "canvas": "^2.7.0",
@@ -33,6 +32,7 @@
     "discord.js": "^12.3.1"
   },
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
