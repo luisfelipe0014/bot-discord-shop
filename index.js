@@ -1,7 +1,8 @@
 const Discord = require("discord.js");
 const fs = require("fs");
-const config = require("./config.json");
-const prefix = config.prefix;
+const confi = require("./config.json");
+const prefix = confi.prefix;
+const config = require('dotenv')
 const bot = new Discord.Client({
   disableMentions: "everyone",
   partials: ["REACTION"],
@@ -14,7 +15,7 @@ bot.aliases = new Discord.Collection();
 bot.snipes = new Discord.Collection();
 bot.events = new Discord.Collection();
 bot.categories = fs.readdirSync("./commands/");
-const token = require(`./.env`);
+
 
 ["command", "server"].forEach((handler) => {
   require(`./handlers/${handler}`)(bot, prefix);
@@ -44,4 +45,4 @@ bot.on("messageReactionRemove", (reaction, user) => {
   require("./events/guild/messageReactionRemove")(reaction, user);
 });
 
-bot.login(token.TOKEN_BOT);
+bot.login(process.env.BOT_TOKEN);
