@@ -1,0 +1,43 @@
+{
+  "name": "qrshop",
+  "version": "1.0.0",
+  "description": "bot criado para lojinha de fivem",
+  "main": "index.js",
+  "start": "node index",
+  "dependencies": {
+    "@discordjs/opus": "^0.4.0",
+    "canvas": "^2.7.0",
+    "common-tags": "^1.8.0",
+    "discord.js": "^12.3.1",
+    "discord.js-minesweeper": "^1.0.6",
+    "express": "^4.17.1",
+    "figlet": "^1.5.0",
+    "genius-lyrics": "^4.2.5",
+    "imageapi.js": "^1.4.0",
+    "moment": "^2.29.1",
+    "mongoose": "^5.12.0",
+    "ms": "^2.1.3",
+    "node": "^15.10.0",
+    "node.js": "^0.0.1-security",
+    "os": "^0.1.1",
+    "salvage.db": "^1.2.4",
+    "simple-youtube-api": "^5.2.1",
+    "weather-js": "^2.0.0",
+    "ytdl-core": "^4.5.0",
+    "ytdl-core-discord": "^1.2.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luisfelipe0014/botqrshop.git"
+  },
+  "author": "Felipe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luisfelipe0014/botqrshop/issues"
+  },
+  "homepage": "https://github.com/luisfelipe0014/botqrshop#readme"
+}

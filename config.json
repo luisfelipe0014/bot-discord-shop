@@ -1,0 +1,15 @@
+{
+  "prefix": "!",
+
+  "footertext" : "©️ QR Shop Bot • Developed by Felipe®#1814",
+    
+  "footerimage" : "https://cdn.discordapp.com/icons/773164787479216128/eaeaca06bec225dba7bb8b1ce76b3a95.webp",
+  
+  "color" : "#F8FBEF",
+
+  "title" : "QR Shop  ◆  ",
+
+  "QUEUE_LIMIT" : "0",
+
+  "YOUTUBE_API_KEY" : "AIzaSyAXn9C2P7-bKhJHvjyMZZ8ymNh79DFB9eI"
+}
