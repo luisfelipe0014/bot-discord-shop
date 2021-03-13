@@ -2,7 +2,7 @@ const Discord = require("discord.js");
 const fs = require("fs");
 const confi = require("./config.json");
 const prefix = confi.prefix;
-const config = require('dotenv')
+const config = require('dotenv').config()
 const bot = new Discord.Client({
   disableMentions: "everyone",
   partials: ["REACTION"],
@@ -46,3 +46,5 @@ bot.on("messageReactionRemove", (reaction, user) => {
 });
 
 bot.login(process.env.BOT_TOKEN);
+
+
