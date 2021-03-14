@@ -26,6 +26,15 @@ mongoose.connect('mongodb+srv://luis0014:luis0014@cluster0.jqrnx.gcp.mongodb.net
     useCreateIndex: true
 });
 
+mongoose.connection.on("connected", () => {
+  console.log("Mongoose has successfully connected!");
+});
+mongoose.connection.on("err", err => {
+  console.error(`Mongoose connection error: \n${err.stack}`);
+});
+mongoose.connection.on("disconnected", () => {
+  console.warn("Mongoose connection lost");
+});
 
 ["command", "server"].forEach((handler) => {
   require(`./handlers/${handler}`)(bot, prefix);
