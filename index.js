@@ -16,6 +16,16 @@ bot.snipes = new Discord.Collection();
 bot.events = new Discord.Collection();
 bot.categories = fs.readdirSync("./commands/");
 
+const mongoose = require('mongoose');
+const prefix = require('./models/prefix');
+
+mongoose.connect('mongodb+srv://luis0014:luis0014@cluster0.jqrnx.gcp.mongodb.net/luis0014?retryWrites=true&w=majority', { 
+    useNewUrlParser: true,
+    useFindAndModify: false,
+    useUnifiedTopology: true,
+    useCreateIndex: true
+});
+
 
 ["command", "server"].forEach((handler) => {
   require(`./handlers/${handler}`)(bot, prefix);
