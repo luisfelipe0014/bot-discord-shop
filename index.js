@@ -17,7 +17,7 @@ bot.events = new Discord.Collection();
 bot.categories = fs.readdirSync("./commands/");
 
 const mongoose = require('mongoose');
-const prefix = require('./models/prefix');
+const setprefix = require('./models/prefix');
 
 mongoose.connect('mongodb+srv://luis0014:luis0014@cluster0.jqrnx.gcp.mongodb.net/luis0014?retryWrites=true&w=majority', { 
     useNewUrlParser: true,
